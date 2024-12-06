@@ -26,3 +26,15 @@ if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
     }
   };
 }
+
+
+//start recording
+$('#start-btn').click(function() {
+  if (!isRecognizing) {
+    recognition.start();
+    $('#viewIcon').hide()
+    $('#playIcon').show()
+    isRecognizing = true;
+  }
+});
+
