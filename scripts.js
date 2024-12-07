@@ -38,3 +38,14 @@ $('#start-btn').click(function() {
   }
 });
 
+
+//stop recording 
+$('#stop-btn').click(function() {
+  if (isRecognizing) {
+    recognition.stop();
+    $('#playIcon').hide()
+    $('#viewIcon').show()
+    isRecognizing = false;
+  }
+});
+
