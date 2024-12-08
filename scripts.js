@@ -49,3 +49,9 @@ $('#stop-btn').click(function() {
   }
 });
 
+
+//copy text
+$('#copy-btn').click(function(){
+    $('#output-text').select()
+    document.execCommand('copy');
+});
