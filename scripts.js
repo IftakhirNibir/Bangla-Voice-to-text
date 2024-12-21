@@ -55,3 +55,9 @@ $('#copy-btn').click(function(){
     $('#output-text').select()
     document.execCommand('copy');
 });
+
+
+//clear textarea 
+$('#clear-btn').click(function(){
+  $('#output-text').val(" ");
+});
